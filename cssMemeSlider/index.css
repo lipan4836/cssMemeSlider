@@ -11,7 +11,7 @@ img {
 
 .mem-discription {
   color: #71ABFF;
-  font-size: 2vmax;
+  font-size: 1.5rem;
 }
 
 input {
@@ -66,6 +66,7 @@ input {
 }
 
 .container {
+  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -77,7 +78,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: 5vh;
-  width: 85vw;
+  width: 65vw;
   overflow: hidden;
 }
 
@@ -112,6 +113,7 @@ input {
 .mem-text-wrap {
   display: flex;
   width: 500%;
+  min-height: 4rem;
 }
 
 .slide-text {
@@ -172,6 +174,9 @@ input {
 /* ---------- responsive ---------- */
 
 @media (max-width: 700px) {
+  .slider-wrap {
+    width: 80vw;
+  }
   .controls-wrap{
     flex-direction: column-reverse;
     gap: 7vw;
