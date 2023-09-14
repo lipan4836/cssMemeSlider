@@ -4,3 +4,62 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
+/* img {
+  width: 100%;
+} */
+
+.mem-discription {
+  color: #71ABFF;
+  font-size: 2vmin;
+}
+
+input {
+  display: none;
+}
+
+.nav-btn {
+  width: 2vw;
+  height: 1.2vw;
+  border: #71ABFF solid 0.2vw;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+.nav-btn:hover {
+  background: #fff;
+  border-color: #fff;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #25282A;
+}
+
+.slider-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  width: 85vw;
+  overflow: hidden;
+}
+
+.img-wrap {
+  display: flex;
+  width: 500%;
+}
+
+.controls-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10%;
+}
