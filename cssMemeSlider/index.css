@@ -20,11 +20,11 @@ input {
 
 .nav-btn {
   width: 2vw;
-  height: 1.2vw;
-  border: #71ABFF solid 0.2vw;
-  border-radius: 50%;
+  height: 2vw;
+  border: #71ABFF solid 0.3vw;
+  border-radius: 20%;
   cursor: pointer;
-  transition: all 0.5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .nav-btn:hover {
@@ -56,10 +56,25 @@ input {
 .controls-wrap {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .navigation {
   display: flex;
   justify-content: flex-end;
-  gap: 10%;
+  gap: 1vw;
+}
+
+.mem-text-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mem-text-wrap {
+  display: flex;
+  width: 500%;
+}
+
+.slide-text {
+  width: 100%;
 }
