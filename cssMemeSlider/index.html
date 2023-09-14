@@ -10,11 +10,6 @@
   <div class="container">
     <div class="slider-wrap">
       <div class="img-wrap">
-        <input type="radio" name="radio-btn" id="radio1">
-        <input type="radio" name="radio-btn" id="radio2">
-        <input type="radio" name="radio-btn" id="radio3">
-        <input type="radio" name="radio-btn" id="radio4">
-        <input type="radio" name="radio-btn" id="radio5">
         <div class="slide slide1">
           <img class="mem-img" src="assets/img/champion.jpg" alt="champion">
         </div>
@@ -34,33 +29,57 @@
       <div class="controls-wrap">
         <div class="mem-text-container">
           <div class="mem-text-wrap">
-            <div class="slide-text text1">
+            <div class="slide-text text1" data-text="1">
               <span class="mem-discription">Когда заходишь в Dashbord приложения RSSchool</span>
             </div>
-            <div class="slide-text text2">
+            <div class="slide-text text2" data-text="2">
               <span class="mem-discription">Говорят, что огурцы снимают напряжение... Ты, после сдачи таски</span>
             </div>
-            <div class="slide-text text3">
+            <div class="slide-text text3" data-text="3">
               <span class="mem-discription">Типичные вопросы разрабов и тестеров</span>
             </div>
-            <div class="slide-text text4">
+            <div class="slide-text text4" data-text="4">
               <span class="mem-discription">Когда код заработал, но ты не понял, что сделал</span>
             </div>
-            <div class="slide-text text5">
+            <div class="slide-text text5" data-text="5">
               <span class="mem-discription">Студент, который закончил Library</span>
             </div>
           </div>
         </div>
         <div class="navigation">
-          <label class="nav-btn" for="radio1"></label>
-          <label class="nav-btn" for="radio2"></label>
-          <label class="nav-btn" for="radio3"></label>
-          <label class="nav-btn" for="radio4"></label>
-          <label class="nav-btn" for="radio5"></label>
+          <label class="nav-btn">
+            <span class="nav-btn-checkbox">
+              <span class="nav-btn-checked"></span>
+            </span>
+            <input type="radio" name="radio-btn" id="radio1" data-target="1" checked>
+          </label>
+          <label class="nav-btn">
+            <span class="nav-btn-checkbox">
+              <span class="nav-btn-checked"></span>
+            </span>
+            <input type="radio" name="radio-btn" id="radio2" data-target="2">
+          </label>
+          <label class="nav-btn">
+            <span class="nav-btn-checkbox">
+              <span class="nav-btn-checked"></span>
+            </span>
+            <input type="radio" name="radio-btn" id="radio3" data-target="3">
+          </label>
+          <label class="nav-btn">
+            <span class="nav-btn-checkbox">
+              <span class="nav-btn-checked"></span>
+            </span>
+            <input type="radio" name="radio-btn" id="radio4" data-target="4">
+          </label>
+          <label class="nav-btn">
+            <span class="nav-btn-checkbox">
+              <span class="nav-btn-checked"></span>
+            </span>
+            <input type="radio" name="radio-btn" id="radio5" data-target="5">
+          </label>
         </div>
       </div>
     </div>
   </div>
-  
 </body>
 </html>
