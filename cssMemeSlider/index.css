@@ -5,6 +5,10 @@ body {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 img {
   width: 100%;
 }
@@ -13,6 +17,8 @@ img {
   color: #71ABFF;
   font-size: 1.5rem;
 }
+
+/* ---------- custom checkbox ---------- */
 
 input {
   display: none;
@@ -25,8 +31,6 @@ input {
   width: 4vmax;
   height: 4vmax;
   text-align: center;
-  /* border: #71ABFF solid 0.3vw;
-  border-radius: 20%; */
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
@@ -43,11 +47,6 @@ input {
   transition: all 0.3s ease-in;
 }
 
-.nav-btn-checked {
-  opacity: 0;
-  transition: all 0.3s ease-in;
-}
-
 .nav-btn:hover > .nav-btn-checkbox {
   background: #fff;
   border-color: #fff;
@@ -58,12 +57,13 @@ input {
   border-color: #ec2c2c;
 }
 
-.nav-btn:has(.radio-btn:checked) .nav-btn-checked {
-  opacity: 1;
-  width: 2.5vmax;
-  height: 2.5vmax;
-  background: #000000;
+.nav-btn:has(.radio-btn:checked) > .nav-btn-checkbox {
+  background: #ec2c2c;
+  border-color: #fff;
+  cursor: default;
 }
+
+/* ------------------------------ */
 
 .container {
   width: 100vw;
@@ -78,7 +78,7 @@ input {
   display: flex;
   flex-direction: column;
   gap: 5vh;
-  width: 65vw;
+  width: 70vw;
   overflow: hidden;
 }
 
@@ -97,6 +97,7 @@ input {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 2rem;
 }
 
 .navigation {
@@ -113,13 +114,15 @@ input {
 .mem-text-wrap {
   display: flex;
   width: 500%;
-  min-height: 4rem;
+  min-height: 6rem;
 }
 
 .slide-text {
   display: none;
   width: 20%;
 }
+
+/* ---------- logic ---------- */
 
 @keyframes textForMemes {
   0% {
@@ -131,8 +134,6 @@ input {
     transform: translateX(0);
   }
 }
-
-/* buttons */
 
 .slider-wrap:has([data-target='1']:checked) .img-wrap {
   transform: translateX(0);
@@ -183,5 +184,20 @@ input {
   }
   .navigation {
     margin: 0 auto;
+  }
+  .mem-discription {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .mem-discription {
+    font-size: 1.2rem;
+  }
+}
+
+@media (hover: none) {
+  a:hover {
+    color: inherit;
   }
 }
