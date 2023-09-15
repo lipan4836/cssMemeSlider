@@ -1,0 +1,203 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.mem-discription {
+  color: #71ABFF;
+  font-size: 1.5rem;
+}
+
+/* ---------- custom checkbox ---------- */
+
+input {
+  display: none;
+}
+
+.nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4vmax;
+  height: 4vmax;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.nav-btn-checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5vmax;
+  height: 2.5vmax;
+  border: #71ABFF solid 0.3vw;
+  border-radius: 20%;
+  background: transparent;
+  transition: all 0.3s ease-in;
+}
+
+.nav-btn:hover > .nav-btn-checkbox {
+  background: #fff;
+  border-color: #fff;
+}
+
+.nav-btn:active > .nav-btn-checkbox {
+  background: #ec2c2c;
+  border-color: #ec2c2c;
+}
+
+.nav-btn:has(.radio-btn:checked) > .nav-btn-checkbox {
+  background: #ec2c2c;
+  border-color: #fff;
+  cursor: default;
+}
+
+/* ------------------------------ */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #25282A;
+}
+
+.slider-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+  width: 70vw;
+  overflow: hidden;
+}
+
+.img-wrap {
+  display: flex;
+  width: 500%;
+  transition: all 0.3s ease-in;
+}
+
+.slide {
+  width: 20%;
+  transition: all 0.3s ease-in;
+}
+
+.controls-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1vw;
+}
+
+.mem-text-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.mem-text-wrap {
+  display: flex;
+  width: 500%;
+  min-height: 6rem;
+}
+
+.slide-text {
+  display: none;
+  width: 20%;
+}
+
+/* ---------- logic ---------- */
+
+@keyframes textForMemes {
+  0% {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slider-wrap:has([data-target='1']:checked) .img-wrap {
+  transform: translateX(0);
+}
+.slider-wrap:has([data-target='2']:checked) .img-wrap {
+  transform: translateX(-20%);
+}
+.slider-wrap:has([data-target='3']:checked) .img-wrap {
+  transform: translateX(-40%);
+}
+.slider-wrap:has([data-target='4']:checked) .img-wrap {
+  transform: translateX(-60%);
+}
+.slider-wrap:has([data-target='5']:checked) .img-wrap {
+  transform: translateX(-80%);
+}
+
+.slider-wrap:has([data-target='1']:checked) .slide-text[data-text='1'] {
+  display: block;
+  animation: textForMemes 0.3s ease-in;
+}
+.slider-wrap:has([data-target='2']:checked) .slide-text[data-text='2'] {
+  display: block;
+  animation: textForMemes 0.3s ease-in;
+}
+.slider-wrap:has([data-target='3']:checked) .slide-text[data-text='3'] {
+  display: block;
+  animation: textForMemes 0.3s ease-in;
+}
+.slider-wrap:has([data-target='4']:checked) .slide-text[data-text='4'] {
+  display: block;
+  animation: textForMemes 0.3s ease-in;
+}
+.slider-wrap:has([data-target='5']:checked) .slide-text[data-text='5'] {
+  display: block;
+  animation: textForMemes 0.3s ease-in;
+}
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 700px) {
+  .slider-wrap {
+    width: 80vw;
+  }
+  .controls-wrap{
+    flex-direction: column-reverse;
+    gap: 7vw;
+  }
+  .navigation {
+    margin: 0 auto;
+  }
+  .mem-discription {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .mem-discription {
+    font-size: 1.2rem;
+  }
+}
+
+@media (hover: none) {
+  a:hover {
+    color: inherit;
+  }
+}

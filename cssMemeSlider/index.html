@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meme Slider</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <div class="slider-wrap">
+      <div class="img-wrap">
+        <div class="slide slide1">
+          <img class="mem-img" src="assets/img/champion.jpg" alt="champion">
+        </div>
+        <div class="slide slide2">
+          <img class="mem-img" src="assets/img/cucmberman.jpg" alt="man just chiling">
+        </div>
+        <div class="slide slide3">
+          <img class="mem-img" src="assets/img/devvstest.jpg" alt="developer Vs tester">
+        </div>
+        <div class="slide slide4">
+          <img class="mem-img" src="assets/img/howtodo.jpg" alt="how can it works?">
+        </div>
+        <div class="slide slide5">
+          <img class="mem-img" src="assets/img/finishtask.jpg" alt="finish Library project">
+        </div>
+      </div>
+      <div class="controls-wrap">
+        <div class="mem-text-container">
+          <div class="mem-text-wrap">
+            <div class="slide-text text1" data-text="1">
+              <span class="mem-discription">Когда заходишь в Score приложения RSSchool</span>
+            </div>
+            <div class="slide-text text2" data-text="2">
+              <span class="mem-discription">Говорят, что огурцы снимают напряжение... Ты, после сдачи таски</span>
+            </div>
+            <div class="slide-text text3" data-text="3">
+              <span class="mem-discription">Типичные вопросы разрабов и тестеров</span>
+            </div>
+            <div class="slide-text text4" data-text="4">
+              <span class="mem-discription">Когда код заработал, но ты не понял, что сделал</span>
+            </div>
+            <div class="slide-text text5" data-text="5">
+              <span class="mem-discription">Когда закончился кросс-чек по Library</span>
+            </div>
+          </div>
+        </div>
+        <div class="navigation">
+          <label class="nav-btn">
+            <span class="nav-btn-checkbox"></span>
+            <input class="radio-btn" type="radio" name="radio-btn" id="radio1" data-target="1" checked>
+          </label>
+          <label class="nav-btn">
+            <span class="nav-btn-checkbox"></span>
+            <input class="radio-btn" type="radio" name="radio-btn" id="radio2" data-target="2">
+          </label>
+          <label class="nav-btn">
+            <span class="nav-btn-checkbox"></span>
+            <input class="radio-btn" type="radio" name="radio-btn" id="radio3" data-target="3">
+          </label>
+          <label class="nav-btn">
+            <span class="nav-btn-checkbox"></span>
+            <input class="radio-btn" type="radio" name="radio-btn" id="radio4" data-target="4">
+          </label>
+          <label class="nav-btn">
+            <span class="nav-btn-checkbox"></span>
+            <input class="radio-btn" type="radio" name="radio-btn" id="radio5" data-target="5">
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
